@@ -6,7 +6,7 @@
 #    By: pehenri2 <pehenri2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/13 12:01:57 by pehenri2          #+#    #+#              #
-#    Updated: 2023/07/17 15:53:50 by pehenri2         ###   ########.fr        #
+#    Updated: 2023/07/17 16:44:56 by pehenri2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ FLAGS = -Wall -Werror -Wextra
 SRC = ft_display_file.c
 OBJ = $(patsubst %.c, ./%.o, $(SRC))
 
-$(NAME): $(NAME).c
+$(NAME): $(OBJ)
 	gcc $(FLAGS) -o $(NAME) $(SRC)
 
 clean:
